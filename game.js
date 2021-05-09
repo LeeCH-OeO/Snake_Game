@@ -7,7 +7,7 @@ let gameOver = false
 let gameOver2 = false
 let gameOver3 = false
 let gameOver4 = false
-var pro_speed = prompt("Snake Speed, Higher is faster.\nDefault speed is 5.","5")
+var pro_speed = prompt("Snake Speed, Higher is faster.\nDefault speed is 5, Maximum is 10, Minimun is 1","5")
 var speed=5
 function isNumeric(value) {
     return /^-?\d+$/.test(value);
