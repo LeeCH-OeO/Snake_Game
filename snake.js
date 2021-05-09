@@ -1,7 +1,6 @@
 import { getInputDirection,getInputDirection2 } from "./input.js"
 import{randonGridPosition} from './grid.js'
 
-export const SNAKE_SPEED = 6
 const snakeBody = [{ x: 11, y: 11 }]
 const snakeBody2 = [{ x: 22, y: 22 }]
 let newSegment=0

@@ -1,4 +1,4 @@
-import {SNAKE_SPEED,update as updateSnake,draw as drawSnake, getSnakeHead, snakeIntersection, getSnakeHead2,snakeIntersection2, s1ons2, s2ons1, whowin} from './snake.js'
+import {update as updateSnake,draw as drawSnake, getSnakeHead, snakeIntersection, getSnakeHead2,snakeIntersection2, s1ons2, s2ons1, whowin} from './snake.js'
 import{update as updateFood, draw as drawFood} from './food.js'
 import{outsideGrid} from './grid.js'
 let lastRenderTime = 0
@@ -7,6 +7,26 @@ let gameOver = false
 let gameOver2 = false
 let gameOver3 = false
 let gameOver4 = false
+var pro_speed = prompt("Snake Speed, Higher is faster.\nDefault speed is 5.","5")
+var speed=5
+function isNumeric(value) {
+    return /^-?\d+$/.test(value);
+}
+if(isNumeric(pro_speed)){
+    if(parseInt(pro_speed)>=10){
+        speed=10
+    }
+    else if(parseInt(pro_speed)<=1){
+        speed=1
+    }
+    else{
+        speed=parseInt(pro_speed)
+    }
+}
+
+
+
+
 function main(currentTime){
     
     if(gameOver){
@@ -44,7 +64,7 @@ function main(currentTime){
 
     window.requestAnimationFrame(main)
     const secondsLastRender = (currentTime - lastRenderTime)/1000
-    if(secondsLastRender < 1/SNAKE_SPEED) return
+    if(secondsLastRender < 1/speed) return
     
     
     lastRenderTime = currentTime
