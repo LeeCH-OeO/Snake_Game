@@ -23,6 +23,7 @@ if(isNumeric(pro_speed)){
         speed=parseInt(pro_speed)
     }
 }
+console.log("Snake speed:"+speed)
 
 
 
