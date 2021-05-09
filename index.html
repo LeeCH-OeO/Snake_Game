@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,18 +44,12 @@
 <body>
   
   <div id="game-board"></div>
-  <audio src='calli_bgm.mp3' autoplay loop muted id="music" ></audio>
+  <audio src='Woe_Is_Me.mp3' controls loop></audio>
   <script>
-    if (confirm("Use w, s, a, d to control red snake.\nUse ⬆️ ⬇️ ⬅️ ➡️ to control blue snake.\n Eat Yallow food to get longer.")){
-      var music_unmute = document.getElementById("music")
-      music_unmute.muted=!music_unmute.muted
-    }
-    else{
-      var music_unmute = document.getElementById("music")
-      music_unmute.muted=!music_unmute.muted
-    }
+    alert("Use w, s, a, d to control red snake.\nUse ⬆️ ⬇️ ⬅️ ➡️ to control blue snake.\n Eat Yallow food to get longer.")
+      
+    
 
   </script>
   
 </body>
-</html>
