@@ -11,32 +11,32 @@ function main(currentTime){
     
     if(gameOver){
         if(confirm('Winner is red snake!')){
-            window.location='/'
+            location.reload()
         }
         return
     }
     if(gameOver2){
         if(confirm('Winner is blue snake!')){
-            window.location='/'
+            location.reload()
         }
         return
     }
     if(gameOver3 || gameOver4){
         if(whowin()===1){
             if(confirm('Winner is blue snake!')){
-                window.location='/'
+                location.reload()
             }
             return
         }
         if (whowin()===2){
             if(confirm('Winner is  red snake !')){
-                window.location='/'
+                location.reload()
             }
             return
         }
         if (whowin()===3){
             if(confirm("It's a tie!")){
-                window.location='/'
+                location.reload()
             }
             return
         }
