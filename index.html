@@ -42,10 +42,19 @@
   <script src="game.js" defer type="module"></script>
 </head>
 <body>
-  <audio src='calli_bgm.mp3' autoplay preload="auto"></audio>
+  
   <div id="game-board"></div>
+  <audio src='calli_bgm.mp3' autoplay loop muted id="music" ></audio>
   <script>
-    alert("Use w, s, a, d to control red snake.\nUse ⬆️ ⬇️ ⬅️ ➡️ to control blue snake.\n Eat Yallow food to get longer.")
+    if (confirm("Use w, s, a, d to control red snake.\nUse ⬆️ ⬇️ ⬅️ ➡️ to control blue snake.\n Eat Yallow food to get longer.")){
+      var music_unmute = document.getElementById("music")
+      music_unmute.muted=!music_unmute.muted
+    }
+    else{
+      var music_unmute = document.getElementById("music")
+      music_unmute.muted=!music_unmute.muted
+    }
+
   </script>
   
 </body>
