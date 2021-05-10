@@ -13,6 +13,7 @@ function isNumeric(value) {
     return /^-?\d+$/.test(value);
 }
 if(isNumeric(pro_speed)){
+    
     if(parseInt(pro_speed)>=10){
         speed=10
     }
@@ -23,6 +24,7 @@ if(isNumeric(pro_speed)){
         speed=parseInt(pro_speed)
     }
 }
+
 console.log("Snake speed:"+speed)
 
 
