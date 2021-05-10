@@ -1,8 +1,20 @@
 import { getInputDirection,getInputDirection2 } from "./input.js"
-import{randonGridPosition} from './grid.js'
+const snakeBody=[{x:getS1Pos(),y:getS1Pos()}]
+const snakeBody2=[{x:getS2Pos(),y:getS2Pos()}]
 
-const snakeBody = [{ x: 11, y: 11 }]
-const snakeBody2 = [{ x: 22, y: 22 }]
+function getS1Pos(){
+    let min=Math.ceil(2)
+    let max=Math.floor(15)
+    return Math.floor(Math.random()*(max - min)+min)
+}
+function getS2Pos(){
+    let min=Math.ceil(15)
+    let max=Math.floor(30)
+    return Math.floor(Math.random()*(max - min)+min)
+}
+
+
+
 let newSegment=0
 let newSegment2=0
 export function update(){
