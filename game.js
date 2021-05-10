@@ -32,7 +32,7 @@ console.log("Snake speed:"+speed)
 
 function main(currentTime){
     
-    if(gameOver){
+    if(gameOver){        
         if(confirm('Winner is red snake!')){
             location.reload()
         }
@@ -52,7 +52,7 @@ function main(currentTime){
             return
         }
         if (whowin()===2){
-            if(confirm('Winner is  red snake !')){
+            if(confirm('Winner is red snake!')){
                 location.reload()
             }
             return
